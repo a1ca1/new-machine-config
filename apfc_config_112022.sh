@@ -36,6 +36,7 @@ brew install firefox
 brew install chrome
 brew install transmission
 brew install dropbox
+brew install calibre
 
 #Tweaks
 
