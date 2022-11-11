@@ -95,6 +95,11 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop"
 echo "Screenshots as PNGs, please"
 defaults write com.apple.screencapture type -string "png"
 
+#Turning off Gatekeeper
+echo "I'm the Gatekeeper now"
+sudo spctl --master-disable
+
+
 echo "Relaunching Finder"
 killall Finder
 
