@@ -4,9 +4,11 @@ echo "Starting configuration"
 echo "setting up the brewery"
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-#apple silicon only: echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/apfc/.zprofile
+#apple silicon only: 
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/apfc/.zprofile
 
-#apple silicon only: eval "$(/opt/homebrew/bin/brew shellenv)"
+#apple silicon only: 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 #installing software
@@ -18,9 +20,7 @@ brew install speedtest-cli
 brew install fdupes
 brew install yt-dlg 
 brew install ffmpeg
-brew install neofetch
-brew install meetingbar
-brew install beardedspice
+brew install caffeine
 brew install bbedit
 brew install alfred
 brew install 1password
@@ -30,13 +30,14 @@ brew install monitorcontrol
 brew install discord
 brew install appcleaner
 brew install keka
+brew install calibre
 brew tap lotyp/homebrew-formulae
 brew install lotyp/formulae/dockutil
-brew install firefox
-brew install chrome
-brew install transmission
-brew install dropbox
-brew install calibre
+#brew install firefox
+#brew install chrome
+#brew install transmission
+#brew install dropbox
+
 
 #Tweaks
 
@@ -111,16 +112,19 @@ dockutil --remove all
 
 echo "adding apps to dock"
 
-
-dockutil --add /Applications/Safari.app
-dockutil --add /System/Applications/Mail.app 
+dockutil --add /System/Applications/System\ Settings.app
+dockutil --add /Applications/Google\ Chrome.app
+dockutil --add /Applications/Slack.app
+dockutil --add /Applications/Microsoft\ Outlook.app
+dockutil --add /Applications/zoom.us.app
+dockutil --add /Applications/Firefox.app
 dockutil --add /System/Applications/Calendar.app
 dockutil --add /System/Applications/Notes.app
 dockutil --add /System/Applications/Reminders.app
 dockutil --add /System/Applications/Messages.app
-dockutil --add /Applications/calibre.app
-dockutil --add /Applications/Discord.app
-dockutil --add /Applications/1Password.app
+#dockutil --add /Applications/calibre.app
+#dockutil --add /Applications/Discord.app
+#dockutil --add /Applications/1Password.app
 
 
 echo "adding folders to dock"
@@ -128,6 +132,7 @@ echo "adding folders to dock"
 dockutil --add ~/Documents
 dockutil --add ~/Downloads
 
+killall Dock
 
 echo "Done!"
 
