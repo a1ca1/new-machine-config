@@ -33,6 +33,7 @@ brew install discord
 brew install appcleaner
 brew install keka
 brew install calibre
+brew install rectangle
 brew tap lotyp/homebrew-formulae
 brew install lotyp/formulae/dockutil
 brew install --cask tailscale
