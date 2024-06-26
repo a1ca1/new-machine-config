@@ -39,7 +39,6 @@ brew install lotyp/formulae/dockutil
 brew install --cask tailscale
 #brew install firefox
 #brew install chrome
-#brew install transmission
 #brew install dropbox
 
 
