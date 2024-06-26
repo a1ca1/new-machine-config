@@ -35,6 +35,7 @@ brew install keka
 brew install calibre
 brew tap lotyp/homebrew-formulae
 brew install lotyp/formulae/dockutil
+brew install --cask tailscale
 #brew install firefox
 #brew install chrome
 #brew install transmission
