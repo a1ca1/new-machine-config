@@ -6,8 +6,8 @@ echo "Starting configuration"
 echo "setting up the brewery"
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-#apple silicon only: 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/apfc/.zprofile
+#apple silicon only, replace USER with your username: 
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/USER/.zprofile
 
 #apple silicon only: 
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -37,9 +37,9 @@ brew install rectangle
 brew tap lotyp/homebrew-formulae
 brew install lotyp/formulae/dockutil
 brew install --cask tailscale
-#brew install firefox
-#brew install chrome
-#brew install dropbox
+brew install firefox
+brew install chrome
+brew install dropbox
 
 
 #Tweaks
